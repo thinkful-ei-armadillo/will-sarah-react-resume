@@ -1,39 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>React Resume</title>
-    <!-- <script src="app.js"></script> -->
+'use strict';
 
-  </head>
-
-    <body>
-        <script
-      src="https://unpkg.com/react@16/umd/react.development.js"
-      
-    ></script>
-
-    <script
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-      
-    ></script>
-
-    <script
-      src="https://unpkg.com/babel-standalone@6/babel.min.js"
-      
-    ></script>
-    
-    <div id="application-root"></div>
-    
-    <script type="text/babel">
-
-    function Sally() {
-        return (
+// App Component
+function App() {
+    return (
 
         <div className='container'>
         <main role="main">
+        <script src="script.js"></script>
         <h1> Sally Student</h1>
         <img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="photo of Sally Student" />
         <h2> 555-555-5555  <a href="mailto:sally@student.edu">sally@student.edu</a></h2>
@@ -51,10 +24,8 @@
     );
   };
 
-    ReactDOM.render(<Sally/>, document.querySelector('#application-root'));
-    </script>
-
-
-  </body>
-
-</html>
+  
+  // Use App Component:
+  // insert the App's element tree into the #application-root
+//   ReactDOM.render(<App></App>, document.querySelector('#application-root'));
+  
